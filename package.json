@@ -1,0 +1,21 @@
+{
+  "name": "cyberstore",
+  "version": "1.0.0",
+  "description": "An online shop",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server"
+  },
+  "author": "Josiah Mukhwana",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

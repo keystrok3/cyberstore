@@ -3,10 +3,10 @@ require('dotenv').config()
 const mysql = require('mysql2');
 // create connection to mysql db
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'joemw',
-    database: 'cyberstoreDB',
-    password: 'MySQLpassword_SHA#256'
+    host: process.env.HOST,
+    user: process.env.USER,
+    database: process.env.DATABASE,
+    password: process.env.PASSWORD
 });
 
 

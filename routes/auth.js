@@ -1,3 +1,13 @@
+
+/**
+ * Router for the authentication handlers.
+ * 
+ * Uses imported callbacks from the ../controllers/auth directory
+ * to carry out those functions at specific routes.
+ * 
+ * Uses express-session. Configuration is done here.
+ * */ 
+
 const express = require('express');
 const session = require('express-session');
 const router = express.Router();
@@ -17,6 +27,8 @@ router.use(session({
     }
 }));
 
+
+/** Auth routes */ 
 router.route('/users/auth/register').post(register);
 
 router.route('/users/auth/login').post(login);

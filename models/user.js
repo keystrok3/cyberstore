@@ -1,5 +1,11 @@
 
-// User Creation, Updating, and Deletion model
+/** 
+ * User Model.
+ * 
+ * To contain all functionalities regarding creation and deletion of users 
+ * as well as updating of user info
+ * 
+ *  */
 
 const db_connection = require('../config/db_config');   // db config setting imported from another directory
 

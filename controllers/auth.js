@@ -1,6 +1,5 @@
 
 const bcrypt = require('bcrypt');
-const session = require('express-session');
 
 const User = require('../models/user');
 
@@ -38,7 +37,9 @@ const login = async (req, res) => {
         if (user[0]) {
             const match = await bcrypt.compare(password, user[0].password);
             if(match) {
+
                 req.session.email = user[0].email;
+                req.session.role = user[0].role;    // ADMIN or CUSTOMER
                 res.status(201).json({ msg: "success"})
             } else {
                 res.json({ msg: "Wrong Password" });

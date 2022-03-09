@@ -1,4 +1,3 @@
-require('dotenv').config()
 
 const mysql = require('mysql2');
 // create connection to mysql db
@@ -10,4 +9,9 @@ const connection = mysql.createConnection({
 });
 
 
+
+// host: 'localhost',
+// user: 'root',
+// database: 'cyberstoreDB',
+// password: 'veritas'
 module.exports = connection;

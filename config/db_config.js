@@ -7,11 +7,4 @@ const connection = mysql.createConnection({
     database: process.env.DATABASE,
     password: process.env.PASSWORD
 });
-
-
-
-// host: 'localhost',
-// user: 'root',
-// database: 'cyberstoreDB',
-// password: 'veritas'
 module.exports = connection;
